@@ -1,10 +1,12 @@
 # jepsen.dqlite
 
-A Clojure library designed to ... well, that part is up to you.
+A Jepsen test for dqlite
 
 ## Usage
 
-FIXME
+Install go-dqlite via ./go-dqlite.nix and import ./dqlite-cluster.nix in NixOS
+config, then
+`nix-shell -p leiningen --run "lein run test --time-limit 30 --concurrency 10`
 
 ## License
 
